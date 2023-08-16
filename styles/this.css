@@ -53,10 +53,31 @@ body {
   cursor: pointer;
 }
 
-.selected {
+.selected, [is-selected="true"] {
   background-color: cornflowerblue;
   opacity: 0.4;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.purple {
+  color: purple;
+}
+
 
 .modal {
   background-color: black;
