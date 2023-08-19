@@ -9,27 +9,27 @@
 
   <link rel="stylesheet" href="styles/this.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
   </head>
   <body>
     <div id="appShell">
-      <div id="headband" class=flexOuterSpace>
-        <div id="settingsShell" class="iconShell">
+      <div id="headband" class="flexOuterSpace">
+        <button id="settingsShell" class="iconShell">
           <i id="settingsIcon" class="fa">&#xf013;</i>
-        </div>
-        <div id="addRowShell" class="iconShell">
+        </button>
+        <button id="addRowShell" class="iconShell">
           <i id="addRowIcon" class="fa">&#xf067;</i>
-        </div>
+        </button>
       </div>
       <div class="flexOuterCenter">
         <div id="app" class="flexOuterCenter">
         </div>
       </div>
-      <div id=appModals>
+      <div id="appModal" class="hide">
         <div class="flexOuterCenter">
           <div id="panel" class="modal">
-            <div class="relShell"><div class="closeModal">&times;</div></div>
-            <div class="flexOuterCenter">This is the content.</div>
+            <div class="flexOuterEnd"><button id="closeModal">&times;</button></div>
+            <div id="modalContent" class="flexOuterCenter"></div>
           </div>
         </div>
       </div>
@@ -42,6 +42,7 @@
   <script src="lib/player.js"></script>
   <script src="lib/game.js"></script>
   <script src="lib/gameboard.js"></script>
+  <script src="lib/modal.js"></script>
   <script src="lib/main.js"></script>
 
 </html>
