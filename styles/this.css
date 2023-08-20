@@ -25,18 +25,24 @@ body {
   padding: 1em;
 }
 
-.closeModal {
-  position: absolute;
+#closeModal {
   font-size: 30px;
-  right: -5%;
-  top: -5%;
   cursor: pointer;
+  padding-top: 0.125em;
+  border: none;
+  border-radius: 2px;
+}
+
+#modalContent {
+  padding: 1em;
 }
 
 .iconShell {
   font-size: 30px;
   color: white;
   padding: 0.75em 1.5em;
+  border: none;
+  background: transparent;
 }
 
 .fa {
@@ -44,7 +50,7 @@ body {
 }
 
 .setCard {
-  border: 1.5px solid darkgrey;
+  border: 1.5px solid #949494;
   border-radius: 5px;
   background-color: white;
   padding: 0.33em;
@@ -85,11 +91,11 @@ body {
 }
 
 .modal {
-  background-color: black;
+  background-color: #949494;
   border-radius: 2px;
   color: white;
-  opacity: 0.65;
-  padding: 1em 2em 2em 2em;
+  opacity: 1;
+  padding: 1em;
   position: absolute;
   font-size: 24px;
   font-family: courier;
@@ -113,11 +119,11 @@ body {
 #headband {
   padding: 0.25em;
   position: fixed;
-  background-color: black;
+  background-color: #949494;
   width: 103%;
   left: -3%;
   top: 0%;
-  opacity: 0.45;
+  opacity: 1;
 }
 
 #app {
@@ -135,7 +141,7 @@ body {
 
   .iconShell {
     font-size: 30px;
-    color: black;
+    color: #757575;
     padding: 4em 0.25em 0 0.25em;
   }
 
@@ -177,7 +183,7 @@ body {
 @media only screen and (min-width: 812px) {
   .iconShell {
     font-size: 30px;
-    color: black;
+    color: #757575;
   }
 
   .setCard {
