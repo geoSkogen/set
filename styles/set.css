@@ -35,6 +35,11 @@ body {
   line-height: 0.7;
 }
 
+#closeModal:hover {
+  background-color: red;
+  color: white;
+}
+
 #modalContent {
   padding: 1em;
 }
@@ -43,21 +48,32 @@ body {
   font-size: 30px;
   color: white;
   padding: 0.75em 1.5em;
-  border: none;
+  border: 2px solid transparent;
   background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.fa {
-  cursor: pointer;
+.iconShell:hover {
+  border: 2px solid white;
 }
+
+.iconShell:focus {
+  border: 2px solid #949494;
+  outline: 2px solid white;
+  color: #949494;
+  background-color: white;
+}
+
 
 .setCard {
-  border: 1.5px solid #949494;
+  border: 2.5px solid #949494;
+  outline: 2.5px solid transparent;
   border-radius: 5px;
   background-color: white;
   padding: 0.33em;
   margin: 0 0.33em 0.66em 0.33em;
-  font-size: 30px;
+  font-size: 32px;
   font-family: courier;
   min-width: 70px;
   max-width: 70px;
@@ -66,11 +82,23 @@ body {
   text-align: center;
   cursor: pointer;
   line-height: 0.95;
+  position: relative;
 }
 
-.selected, [is-selected="true"] {
-  background-color: cornflowerblue;
-  opacity: 0.4;
+.setCard:hover {
+  outline: 2.5px solid #949494;
+}
+
+.selected, [aria-selected="true"] {
+  background-color: lightblue !important;
+  border: 2.5px solid #949494 !important;
+  outline: 2.5px solid transparent !important;
+}
+
+.setCard:focus {
+  border: 2.5px solid white !important;
+  outline: 2.5px solid black !important;
+  background-color: gainsboro;
 }
 
 .bold {
@@ -82,15 +110,28 @@ body {
 }
 
 .green {
-  color: green;
+  color: forestgreen;
 }
 
 .red {
-  color: red;
+  color: orangered;
 }
 
 .purple {
   color: purple;
+}
+
+.selected-icon {
+  color: #757575;
+  font-size: 16px !important;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  display: none !important;
+}
+
+.selected .selected-icon, [aria-selected="true"] .selected-icon {
+  display: inline-block !important;
 }
 
 .modal {
@@ -149,8 +190,20 @@ body {
 
   .iconShell {
     font-size: 30px;
-    color: #757575;
+    color: #949494;
     padding: 4em 0.25em 0 0.25em;
+  }
+
+  .iconShell:hover {
+    border: 2px solid #949494;
+  }
+
+  .iconShell:focus {
+    border: 2px solid white;
+    outline: 2px solid #949494;
+    color: white;
+    background-color: #949494;
+
   }
 
   #headband {
@@ -160,7 +213,6 @@ body {
     width: 100%;
     left: 0%;
     top: 0%;
-    opacity: 0.45;
     z-index: 10
   }
 }
@@ -181,7 +233,6 @@ body {
   .setCard {
     min-width: 90px;
     max-width: 90px;
-    padding-top: 1em;
   }
 
   #app {
@@ -192,12 +243,13 @@ body {
 @media only screen and (min-width: 812px) {
   .iconShell {
     font-size: 30px;
-    color: #757575;
+    color: #949494;
   }
 
   .setCard {
     min-width: 100px;
     max-width: 100px;
+    padding-top: 1em;
   }
 
   #app {
@@ -227,6 +279,11 @@ body {
     left: 0%;
     justify-content: space-around;
 
+  }
+
+  #settingsShell, #addRowShell {
+    padding-right: 0.75em;
+    padding-left: 0.75em;
   }
 }
 
