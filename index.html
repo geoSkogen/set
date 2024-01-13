@@ -13,9 +13,10 @@
   </head>
   <body>
     <div id="appShell">
+      <div id="modalBackdrop" class="hide"></div>
 
       <div id="headband" class="flexOuterSpace">
-        <button id="settingsShell" class="iconShell" title="Settings" aria-label="Settings">
+        <button id="settingsShell" class="iconShell" title="Settings" aria-label="Settings" aria-controls="appModal" aria-expaned="false">
           <i id="settingsIcon" class="fa">&#xf013;</i>
         </button>
         <button id="addRowShell" class="iconShell" title="Add a row" aria-label="Add a row">
@@ -28,7 +29,7 @@
         </div>
       </div>
 
-      <div id="appModal" class="hide">
+      <div id="appModal" class="hide" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="flexOuterCenter">
           <div id="panel" class="modal">
             <div class="flexOuterEnd">

@@ -153,16 +153,27 @@ body {
   font-size: 32px;
 }
 
-.hide {
+.hide, .appModal[aria-hidden="true"] {
   display: none;
 }
 
-.show {
+.show, .appModal[aria-hidden="false"] {
   display: block;
 }
 
 #appShell {
   position: relative;
+}
+
+#modalBackdrop {
+  height: 103%;
+  width: 106%;
+  top: -3%;
+  left: -3%;
+  position: absolute;
+  opacity: 0.6;
+  background-color: white;
+  z-index: 20;
 }
 
 #headband {
@@ -278,7 +289,6 @@ body {
     width: 100%;
     left: 0%;
     justify-content: space-around;
-
   }
 
   #settingsShell, #addRowShell {

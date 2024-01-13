@@ -1,12 +1,6 @@
 =======
 A11y/UX
 =======
-Manage focus and roles between modal dialog and main screen
-Use aria-hidden attribute selector to toggle visibility instead of class names
-Dismiss modal dialog with escape key
-Dismiss settings dialog by re-selecting settings icon
-Add focus and hover state styles for buttons and links
-Add aria-labels and aria-descriptions to card elements, e.g. "three S bold green"
 Compensate for button style defaults in mobile
 
 ==
