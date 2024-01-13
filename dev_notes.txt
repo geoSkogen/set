@@ -1,0 +1,19 @@
+=======
+A11y/UX
+=======
+Compensate for button style defaults in mobile
+
+==
+UI
+==
+Create SVG graphics for card content instead of using text
+
+=====
+Logic
+=====
+Rewrite opportunities for early exits enforcing strict variable types
+
+====
+Code
+====
+Annotation
