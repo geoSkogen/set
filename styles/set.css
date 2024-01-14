@@ -206,7 +206,7 @@ body {
   .iconShell {
     font-size: 30px;
     color: #949494;
-    padding: 0.25em;
+    padding: 0.5em;
     position: absolute;
     top: 5em;
   }
@@ -238,14 +238,6 @@ body {
 }
 
 @media only screen and (min-width: 640px) {
-
-  #settingsShell {
-    padding-left: 0.75em;
-  }
-
-  #addRowShell {
-    padding-right: 1em;
-  }
 
   .setCard {
     min-width: 90px;
@@ -284,7 +276,6 @@ body {
 @media only screen and (min-width: 1024px) {
   .iconShell {
     font-size: 30px;
-    padding: 0.75em 1.75em;
     position: static;
   }
 
@@ -304,17 +295,11 @@ body {
     left: 0%;
     justify-content: space-around;
   }
-
-  #settingsShell, #addRowShell {
-    padding-right: 0.75em;
-    padding-left: 0.75em;
-  }
 }
 
 @media only screen and (min-height: 1024px) {
   .iconShell {
     font-size: 30px;
-    padding: 0.75em 1.75em;
   }
 
   .setCard {
