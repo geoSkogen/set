@@ -199,10 +199,20 @@ body {
     width: 82%;
   }
 
+  .buttonShell {
+    position: relative;
+  }
+
   .iconShell {
     font-size: 30px;
     color: #949494;
-    padding: 4em 0.25em 0 0.25em;
+    padding: 0.25em;
+    position: absolute;
+    top: 5em;
+  }
+
+  #addRowShell {
+    left: -2em;
   }
 
   .iconShell:hover {
@@ -228,9 +238,6 @@ body {
 }
 
 @media only screen and (min-width: 640px) {
-  .iconShell {
-    padding-top: 5em;
-  }
 
   #settingsShell {
     padding-left: 0.75em;
@@ -278,6 +285,7 @@ body {
   .iconShell {
     font-size: 30px;
     padding: 0.75em 1.75em;
+    position: static;
   }
 
   .setCard {
@@ -312,6 +320,10 @@ body {
   .setCard {
     min-width: 120px;
     max-width: 120px;
+  }
+
+  #addRowShell {
+    left: -4em;
   }
 
   #app {
